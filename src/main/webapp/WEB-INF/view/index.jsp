@@ -5,12 +5,14 @@
 <!-- Template by Quackit.com -->
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>${title} testing</title>
+    <title>${title}</title>
+  
 
     <!-- Bootstrap Core CSS -->
     <link href="resources/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +26,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 
 </head>
 
@@ -52,22 +55,22 @@
 			<!-- Alert -->
 			<div class="alert alert-success alert-dismissible" role="alert">
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				Welcome to our simple java application
+				Welcome to our simple java application:
+				<p>Congfiguration Variable: ${config}</p>
 			</div>		
 		
 			<!-- Articles -->
+			<table border="2"><th >Course Title</th><th>Course Content</th><th >category ID<th>User ID</th>
 			<c:forEach var="article" items="${articles}">
-			<div class="row">
-				<article class="col-xs-12">
-					<h2>Title of the Course: ${article.title }</h2>
-					<p>Body of the Course:${article.body }</p>
-				
-				</article>
-			</div>
+			<tr><td>${article.title }</td>
+				<td>${article.body }</td> 
+				<td>${article.category }</td>
+				<td>${article.users }</td></tr>
+			
 			<hr>
 			</c:forEach>
 		</div><!--/Center Column-->
-
+</table>
 
 	  <!-- Right Column -->
 	  <div class="col-sm-3">

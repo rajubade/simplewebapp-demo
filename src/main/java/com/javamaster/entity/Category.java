@@ -94,7 +94,7 @@ public class Category implements Serializable {
 
     @Override
     public String toString() {
-        return "newp.Category[ id=" + id + " ]";
+        return id.toString();
     }
     
 }

@@ -137,7 +137,7 @@ public class Users implements Serializable {
 
     @Override
     public String toString() {
-        return "newp.Users[ id=" + id + " ]";
+        return id.toString();
     }
     
 }
