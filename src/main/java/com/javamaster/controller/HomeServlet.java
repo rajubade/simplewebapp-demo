@@ -39,6 +39,7 @@ public class HomeServlet extends HttpServlet {
 			List<Article> articles = articleDao.getAllArticles();
 			request.setAttribute("title", "Title of our application" );
 			request.setAttribute("config", System.getenv("NAME_APP") );
+			request.setAttribute("config_new", System.getenv("DB_NAME") );
 					request.setAttribute("articles", articles);
 			request.getRequestDispatcher("/WEB-INF/view/index.jsp").forward(request, response);
 		}
