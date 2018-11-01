@@ -57,6 +57,7 @@
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				Welcome to our simple java application:
 				<p>Congfiguration Variable: ${config}</p>
+				<p>Congfiguration Variable: ${config_new}</p>
 			</div>		
 		
 			<!-- Articles -->
